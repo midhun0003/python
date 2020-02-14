@@ -1,0 +1,25 @@
+Use git to clone the repository to your local machine:
+
+git clone https://github.com/midhun0003/pythonFlaskServerDocker.git
+Change to the app directory:
+
+cd pythonFlaskServerDocker/app
+
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello from Python!"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
+    
+The requirements.txt file contains the list of packages 
+
+
+pip install -r requirements.txt
+python main.py
+
+http://localhost:5000
